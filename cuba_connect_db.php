@@ -1,4 +1,6 @@
 <?php
+echo "KAMBING !!<BR>";
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database */
 define('DB_NAME', $_ENV['OPENSHIFT_APP_NAME']);
