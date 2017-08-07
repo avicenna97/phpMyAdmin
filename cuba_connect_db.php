@@ -1,5 +1,5 @@
 <?php
-echo "KAMBING 2!!<BR>";
+echo "KAMBING 3!!<BR>";
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database */
