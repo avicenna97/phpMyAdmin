@@ -31,6 +31,8 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = '172.30.10.189';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['port'] = '3306';
+
 
 /**
  * phpMyAdmin configuration storage settings.
