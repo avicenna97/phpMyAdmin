@@ -20,5 +20,5 @@ $link = mysqli_connect('172.30.10.189', 'user', 'password');
 if (!$link) {
     die('Could not connect: ' . mysqli_connect_error());
 }
-printf("MySQL server version: %s\n", mysqli_get_server_info());
+printf("MySQL server version: %s\n", mysqli_get_server_info($link));
 ?>
