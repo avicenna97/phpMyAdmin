@@ -1,5 +1,5 @@
 <?php
-echo "KAMBING !!<BR>";
+echo "KAMBING 2!!<BR>";
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database */
@@ -12,9 +12,11 @@ define('DB_USER', $_ENV['OPENSHIFT_MYSQL_DB_USERNAME']);
 define('DB_PASSWORD', $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']);
 
 /** MySQL hostname */
+//define('DB_HOST', $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT']);
 define('DB_HOST', $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT']);
 
-$link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
+//$link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
+$link = mysqli_connect('172.30.10.189', 'user', 'password');
 if (!$link) {
     die('Could not connect: ' . mysqli_connect_error());
 }
